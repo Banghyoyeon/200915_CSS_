@@ -1,0 +1,42 @@
+body{
+    margin:0;
+}
+#grid{ /* parent div */
+    display:grid;
+    grid-template-columns: 180px 1fr;
+}
+#grid ol{
+    border-right:gray 2px solid;
+    margin:0;
+    padding:20px;
+    padding-left:35px;
+    width:100px;
+}
+img{
+    padding:20px;
+}
+#active{ /* 목차 CSS 글씨 빨간색 */
+    color:red;
+}
+a{ /* 주소 글씨 검은색 */
+    color:black;
+    text-decoration: none;
+}
+h1{
+    font-size:45px;
+    text-align:center;
+    border-bottom:gray 2px solid;
+    margin:0;
+    padding:20px;
+}
+@media(max-width:900px){
+    #grid{ /* parent div */
+        display:block;
+    }/*화면이 최대 910px일 때 id=grid인 본문을 grid가 아닌 block 처리를 하겠다*/
+    #grid ol{
+        border-right:none;
+    }
+    h1{
+        border-bottom:none;
+    }
+}
